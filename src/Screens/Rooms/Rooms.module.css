@@ -1,0 +1,48 @@
+.roomsContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    gap: 10px; 
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 16px); 
+    max-width: calc(33.33% - 16px); 
+    
+}
+
+.heading {
+    margin-top: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+}
+
+.container {
+    flex: 0 0 60px; 
+    height: 60px;
+}
+
+.subContent {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .subContent {
+        max-width: 90%; 
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .card {
+        flex: 1 1 100%; /* 1 card per row on smaller screens */
+        max-width: 100%; 
+    }
+}
